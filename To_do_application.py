@@ -1,7 +1,5 @@
 tasks = []
 #Creating empty list main goals is to make sure all tasks added using add functions are stored and be able to be viewed or deleted by view and delete functions.
-user_input = 0
-
 def add_task():
     task = input("Enter your task: ")
     tasks.append(task)
@@ -20,7 +18,7 @@ def delete_task():
     else:
         tasks.clear()
         print("Your tasks have been deleted")
-#so far, the goal was define function to add, view, and delete tasks so they can be called anytime within the while loop
+#The goal was to define function(add, view, and delete tasks functions) so they can be called anytime within the while loop
 while True:
     
     print("""
@@ -44,5 +42,5 @@ while True:
         break
     else:
         print("You input is invalid. Please try again ")
-#while loop is used here to display menu until user_input enters 4 to stop the loop from runnning. 
-#if conditions below are they to connect menu and call functions depending on the user-s choice on the TO DO Menu.
+#While loop is used here to display menu  indefinitely until user_input enters 4 to stop the loop from runnning. 
+#If conditions were used to connect task menu with functions to respond directly to the user's request.
