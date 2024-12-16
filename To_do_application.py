@@ -27,20 +27,22 @@ while True:
           3. Delete tasks
           4. Quit Application
           """)
-    
-    user_input=int(input("Enter your choice: "))
+    try:
+        user_input=int(input("Enter your choice: "))
 
-        
-    if user_input == 1:
-        add_task()
-    elif user_input == 2:
-        view_task()
-    elif user_input == 3:
-        delete_task()
-    elif user_input == 4:
-        print("Bye, don't hesitae to use this app next time")
-        break
-    else:
-        print("You input is invalid. Please try again ")
+            
+        if user_input == 1:
+            add_task()
+        elif user_input == 2:
+            view_task()
+        elif user_input == 3:
+            delete_task()
+        elif user_input == 4:
+            print("Bye, don't hesitae to use this app next time")
+            break
+        else:
+            print("You input is invalid. Please try again ")
+    except ValueError:
+        print("Your input result in error. Please try again")
 #While loop is used here to display menu  indefinitely until user_input enters 4 to stop the loop from runnning. 
 #If conditions were used to connect task menu with functions to respond directly to the user's request.
