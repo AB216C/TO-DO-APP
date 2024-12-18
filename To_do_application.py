@@ -10,7 +10,7 @@ def view_task():
         print("Unable to view tasks. Task list is empty")
     else:
         print("TO DO LIST INCLUDE:")
-        for index, task in enumerate(tasks,start=1):
+        for index, task in enumerate(tasks):
             print(f"{index}-{task}")
 def delete_task():
     if 0<=index<len(tasks):
