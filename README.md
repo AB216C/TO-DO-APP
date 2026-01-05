@@ -1,8 +1,8 @@
-**"TO DO APP" IS DESIGNED TO ASK USER TO:**
-- ADD TASK TO THE TASKS LIST-All added tasks are stored in a new list called "Tasks"
+**"TO DO APP" IS DESIGNED TO ASK USERS TO:**
+- ADD A TASK- The task will be stored in the created list "Tasks"
 - VIEW ADDED TASKS-all added tasks can be viewed with their index starting from 1
-- DELETE ADDED TASKS ONCE COMPLETED-All tasks can be deleted once the user is done working on all tasks
-- EXIT THE APP ONCE USER IS NO LONGER WANT TO CONTINUE TO ACCESS THE APP:
+- DELETE ADDED TASKS-All tasks can be deleted by the user at anytime
+- EXIT THE APP ONCE USER IS DONE USING THE APP
 
 
 
