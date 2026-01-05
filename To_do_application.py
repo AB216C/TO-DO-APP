@@ -1,5 +1,7 @@
+#Creating empty list main goals is to store added tasks.
 tasks = []
-#Creating empty list main goals is to make sure all tasks added using add functions are stored and be able to be viewed or deleted by view and delete functions.
+
+#Defining functions(add, view, and delete tasks functions): These function will be called anytime within the while loop
 def add_task():
     task = input("Enter your task: ")
     tasks.append(task)
@@ -19,7 +21,9 @@ def delete_task():
         print("Unable to delete. Task list is empty")
     else:
         print("You entered wrong index. Please try again")
-#The goal was to define function(add, view, and delete tasks functions) so they can be called anytime within the while loop
+
+#While loop: To display menu  indefinitely until user_input enters 4 to stop it from runnning. 
+#If conditions were used to connect task menu with functions to respond directly to the user's request.
 while True:
     
     print("""
@@ -47,6 +51,4 @@ while True:
         else:
             print("You input is invalid. Please try again ")
     except ValueError:
-        print("Your input result in error. Please try again")
-#While loop is used here to display menu  indefinitely until user_input enters 4 to stop the loop from runnning. 
-#If conditions were used to connect task menu with functions to respond directly to the user's request.
+        print("Your input resulted in error. Please try again")
